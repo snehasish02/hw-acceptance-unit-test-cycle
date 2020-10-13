@@ -10,12 +10,14 @@ group :development, :test do
   gem 'database_cleaner', '1.4.1'
   gem 'capybara', '2.4.4'
   gem 'launchy'
+  gem 'factory_girl_rails'
   gem 'rspec-rails', '3.7.2'
   gem 'ZenTest', '4.11.2'
 end
 
 group :test do
   gem 'cucumber-rails', :require => false
+  gem 'simplecov', :require => false
   gem 'cucumber-rails-training-wheels'
 end
 group :production do

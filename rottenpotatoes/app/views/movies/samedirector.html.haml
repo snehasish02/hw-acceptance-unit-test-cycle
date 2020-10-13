@@ -1,0 +1,12 @@
+%h2 Movies with Director #{@movie}
+
+%table#movies
+  %thead
+    %tr
+      %th Title
+  %tbody
+    - @movie.each do |movie|
+      %tr
+        %td= movie
+
+= link_to 'Back', movies_path 
